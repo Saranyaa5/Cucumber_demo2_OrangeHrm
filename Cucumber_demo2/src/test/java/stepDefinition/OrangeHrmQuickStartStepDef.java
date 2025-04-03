@@ -53,7 +53,8 @@ public class OrangeHrmQuickStartStepDef {
 
     @Then("the user should be able to see the dashboard of OrangeHRM")
     public void the_user_should_be_able_to_see_the_dashboard_of_orange_hrm() {
-        WebElement dashboardHeader = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h6[text()='Pizarra de pendientes']")));
+        //Pizarra de pendientes
+        WebElement dashboardHeader = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h6[text()='Dashboard']")));
         Assert.assertTrue(dashboardHeader.isDisplayed(), "Dashboard is not visible");
     }
 
