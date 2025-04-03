@@ -20,9 +20,9 @@ Feature: OrangeHRM Login and Dashboard Feature
 
     Examples:
       | option        |
-      |Asignar Permiso|
-      |Listado de licencias y permisos|
-      |Hojas de asistencia|
-      |Solicitar Licencia/ Permiso|
-      |Mis Permisos|
-      |Mi hoja de asistencia|
+      |Assign Leave|
+      |Leave List|
+      |Timesheets|
+      |Apply Leave|
+      |My Leave|
+      |My Timesheet|
