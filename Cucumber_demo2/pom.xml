@@ -63,7 +63,31 @@
 </dependency>
 </dependencies>
 <build>
+
     <plugins>
+    
+            <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>3.1.0</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>java</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                
+                <mainClass>AutoIt.AutoItUploadFile</mainClass>
+                <mainClass>AutoIt.FileUploadDemo</mainClass>
+                <mainClass>AutoIt.Upload_Demo</mainClass>
+                
+                
+                
+            </configuration>
+</plugin>
+    
       <!-- Maven Compiler Plugin for Java 1.8 -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -86,7 +110,10 @@
           </suiteXmlFiles>
         </configuration>
       </plugin>
+      
+      
     </plugins>
   </build>
+  
 
 </project>
