@@ -1,2 +1,4 @@
-stepDefinition\OrangeHrmQuickStartStepDef.class
 runner\RunnerClass.class
+stepDefinition\OrangeHrmDatatableListOfList.class
+stepDefinition\OrangeHrmDataTableListOfMap.class
+stepDefinition\OrangeHrmQuickStartStepDef.class
