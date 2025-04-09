@@ -18,5 +18,6 @@ public class AutoItUploadFile {
 		upload.click();
 		Thread.sleep(3000);
 		Runtime.getRuntime().exec("C:\\Users\\saran\\eclipse-workspace\\Script1.exe");
+		System.out.println("file upload successfull");
 	}
 }
