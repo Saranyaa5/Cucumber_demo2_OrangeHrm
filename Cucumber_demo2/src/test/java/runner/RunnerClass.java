@@ -7,7 +7,7 @@ import io.cucumber.core.snippets.SnippetType;
 @CucumberOptions(
     plugin = {"pretty", "json:target/cucumber-reports/OrangeHrmQuickStartReport.json"}, 
     features = "src/test/resources/com/features/OrangeHrmLogin.feature",
-    glue = "stepDefinitions",
+    glue = "stepDefinition",
     monochrome = true,
     dryRun = false
   

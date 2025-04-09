@@ -53,7 +53,9 @@ public class OrangeHrmQuickStartStepDef {
 
     @Then("the user should be able to see the dashboard of OrangeHRM")
     public void the_user_should_be_able_to_see_the_dashboard_of_orange_hrm() {
-        WebElement dashboardHeader = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h6[text()='Pizarra de pendientes']")));
+    	//Dashboard
+    	//Pizarra de pendientes
+        WebElement dashboardHeader = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h6[text()='Dashboard']")));
         Assert.assertTrue(dashboardHeader.isDisplayed(), "Dashboard is not visible");
     }
 
@@ -65,11 +67,14 @@ public class OrangeHrmQuickStartStepDef {
 
     @Then("the user should see the option {string}")
     public void the_user_should_see_the_option(String option) {
+       
         WebElement quickLaunchOption = wait.until(ExpectedConditions.visibilityOfElementLocated(
             By.xpath("//div[contains(@class, 'orangehrm-quick-launch-heading') and @title='" + option + "']")
         ));
+        System.out.println("the element is:"+quickLaunchOption.getText() );
         Assert.assertTrue(quickLaunchOption.isDisplayed(), "Quick launch option '" + option + "' is not visible");
     }
+
 
 
 

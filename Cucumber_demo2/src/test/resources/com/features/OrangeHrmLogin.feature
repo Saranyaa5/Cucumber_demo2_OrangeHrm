@@ -1,9 +1,10 @@
- #| Assign Leave  |
-      #| Leave List    |
-      #| Timesheets    |
-      #| Apply Leave   |
-      #| My Leave      |
-      #| My Timesheet  |
+#|Asignar Permiso|
+      #|Listado de licencias y permisos|
+      #|Hojas de asistencia|
+      #|Solicitar Licencia/ Permiso|
+      #|Mis Permisos|
+      #|Mi hoja de asistencia|
+ 
 @tag
 Feature: OrangeHRM Login and Dashboard Feature
   I want to use this template for my OrangeHRM login feature file.
@@ -19,10 +20,12 @@ Feature: OrangeHRM Login and Dashboard Feature
     Then the user should see the option "<option>"
 
     Examples:
-      | option        |
-      |Asignar Permiso|
-      |Listado de licencias y permisos|
-      |Hojas de asistencia|
-      |Solicitar Licencia/ Permiso|
-      |Mis Permisos|
-      |Mi hoja de asistencia|
+      |option|
+      |Assign Leave|
+      |Leave List|
+      |Timesheets|
+      |Apply Leave|
+      |My Leave|
+      |My Timesheet|
+      
+      
